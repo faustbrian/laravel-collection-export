@@ -2,10 +2,10 @@
 
 namespace BrianFaust\CollectionExport;
 
-use BrianFaust\ServiceProvider\ServiceProvider as BaseProvider;
+use Illuminate\Support\ServiceProvider;
 use Maatwebsite\Excel\ExcelServiceProvider;
 
-class ServiceProvider extends BaseProvider
+class CollectionExportServiceProvider extends ServiceProvider
 {
     /**
      * Register the application services.
