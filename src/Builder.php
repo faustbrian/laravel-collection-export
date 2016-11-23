@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Collection Export.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\CollectionExport;
 
 use Illuminate\Support\Collection;
@@ -55,7 +64,7 @@ class Builder
      */
     protected function export($data, $type)
     {
-        if (!$data instanceof Collection) {
+        if (! $data instanceof Collection) {
             $data = new Collection($data);
         }
 
