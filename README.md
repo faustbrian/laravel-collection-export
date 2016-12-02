@@ -11,9 +11,7 @@ composer require faustbrian/collection-export
 And then include the service provider within `app/config/app.php`.
 
 ```php
-'providers' => [
-    BrianFaust\CollectionExport\ServiceProvider::class
-];
+BrianFaust\CollectionExport\CollectionExportServiceProvider::class
 ```
 
 ## Usage
