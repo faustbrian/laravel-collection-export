@@ -49,7 +49,7 @@ class Builder
         $filename = $this->filename.'-'.time().'.'.$type;
 
         return response()->make($data, 200, [
-            'Content-Type' => 'application/octet-stream',
+            'Content-Type'        => 'application/octet-stream',
             'Content-Disposition' => 'attachment; filename="'.$filename.'"',
         ]);
     }
@@ -64,7 +64,7 @@ class Builder
      */
     protected function export($data, $type)
     {
-        if (! $data instanceof Collection) {
+        if (!$data instanceof Collection) {
             $data = new Collection($data);
         }
 
