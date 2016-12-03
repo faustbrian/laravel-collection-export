@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\CollectionExport;
 
 use Illuminate\Support\Collection;
@@ -29,7 +31,7 @@ class Builder
      *
      * @return $this
      */
-    public function filename($value)
+    public function filename($value): self
     {
         $this->filename = $value;
 

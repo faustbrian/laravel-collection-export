@@ -9,7 +9,7 @@
         "homepage": "https://brianfaust.de"
     }],
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
         "illuminate/support": "5.3.*",
         "faustbrian/payload": "^1.0",
         "dompdf/dompdf": "~0.6.1",
