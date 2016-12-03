@@ -2,19 +2,8 @@
 
 All Notable changes to `faustbrian/collection-export` will be documented in this file.
 
-## NEXT - YYYY-MM-DD
+## 1.1.0 (22/11/2016)
+- Update and rename ServiceProvider.php to CollectionExportServiceProvider.php
 
-### Added
-- Nothing
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+## 1.0.0 (04/11/2016)
+- First release
