@@ -22,8 +22,10 @@ declare(strict_types=1);
 
 namespace BrianFaust\CollectionExport;
 
+use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Writers\LaravelExcelWriter;
 
 /**
  * Class Builder.
@@ -55,7 +57,7 @@ class Builder
      *
      * @return Response
      */
-    protected function buildResponse($data, $type)
+    protected function buildResponse($data, $type): Response
     {
         $filename = $this->filename.'-'.time().'.'.$type;
 
@@ -73,7 +75,7 @@ class Builder
      *
      * @return mixed
      */
-    protected function export($data, $type)
+    protected function export($data, $type): LaravelExcelWriter
     {
         if (!$data instanceof Collection) {
             $data = new Collection($data);
