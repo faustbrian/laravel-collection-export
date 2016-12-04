@@ -26,6 +26,8 @@ use BrianFaust\Payload\Json;
 use BrianFaust\Payload\Xml;
 use BrianFaust\Payload\Yaml;
 use BrianFaust\Payload\YamlInline;
+use Illuminate\Http\Response;
+use Maatwebsite\Excel\Writers\LaravelExcelWriter;
 
 /**
  * Class Export.
@@ -39,7 +41,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function xls($data)
+    public function xls($data): Response
     {
         return $this->export($data, 'xls');
     }
@@ -51,7 +53,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function xlsx($data)
+    public function xlsx($data): Response
     {
         return $this->export($data, 'xlsx');
     }
@@ -63,7 +65,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function csv($data)
+    public function csv($data): Response
     {
         return $this->export($data, 'csv');
     }
@@ -75,7 +77,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function pdf($data)
+    public function pdf($data): Response
     {
         return $this->export($data, 'pdf');
     }
@@ -87,7 +89,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function json($data)
+    public function json($data): Response
     {
         return $this->buildResponse(
             (new Json())->serialise($data), 'json'
@@ -101,7 +103,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function xml($data)
+    public function xml($data): Response
     {
         return $this->buildResponse(
             (new Xml())->serialise($data), 'xml'
@@ -115,7 +117,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function yaml($data)
+    public function yaml($data): Response
     {
         return $this->buildResponse(
             (new Yaml())->serialise($data), 'yml'
@@ -129,7 +131,7 @@ class Export extends Builder
      *
      * @return Response
      */
-    public function yamlInline($data)
+    public function yamlInline($data): Response
     {
         return $this->buildResponse(
             (new YamlInline())->serialise($data), 'yml'
