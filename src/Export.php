@@ -27,7 +27,6 @@ use BrianFaust\Payload\Xml;
 use BrianFaust\Payload\Yaml;
 use BrianFaust\Payload\YamlInline;
 use Illuminate\Http\Response;
-use Maatwebsite\Excel\Writers\LaravelExcelWriter;
 
 /**
  * Class Export.
