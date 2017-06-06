@@ -22,7 +22,7 @@ class CollectionExportServiceProvider extends ServiceProvider
     /**
      * Register the application services.
      */
-    public function register(): void
+    public function register()
     {
         $this->app->register(ExcelServiceProvider::class);
     }

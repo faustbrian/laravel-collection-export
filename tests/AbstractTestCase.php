@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\CollectionExport;
 
-use BrianFaust\CollectionExport\ServiceProvider;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
 abstract class AbstractTestCase extends AbstractPackageTestCase
@@ -28,6 +27,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app): string
     {
-        return ServiceProvider::class;
+        return \BrianFaust\CollectionExport\CollectionExportServiceProvider::class;
     }
 }
