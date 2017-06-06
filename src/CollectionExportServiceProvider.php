@@ -24,16 +24,14 @@ class CollectionExportServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(ExcelServiceProvider::class);
+        $this->registerProviders();
     }
 
     /**
-     * Get the services provided by the provider.
-     *
-     * @return array
+     * Register the third-party service providers.
      */
-    public function provides(): array
+    private function registerProviders()
     {
-        return [ExcelServiceProvider::class];
+        $this->app->register(ExcelServiceProvider::class);
     }
 }

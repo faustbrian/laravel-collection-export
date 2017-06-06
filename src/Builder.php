@@ -54,7 +54,7 @@ class Builder
         $filename = $this->filename.'-'.time().'.'.$type;
 
         return response()->make($data, 200, [
-            'Content-Type'        => 'application/octet-stream',
+            'Content-Type' => 'application/octet-stream',
             'Content-Disposition' => 'attachment; filename="'.$filename.'"',
         ]);
     }
