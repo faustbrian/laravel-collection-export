@@ -69,7 +69,7 @@ class Builder
      */
     protected function export($data, $type): LaravelExcelWriter
     {
-        if (!$data instanceof Collection) {
+        if (! $data instanceof Collection) {
             $data = new Collection($data);
         }
 
