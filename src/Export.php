@@ -14,11 +14,11 @@ declare(strict_types=1);
 
 namespace BrianFaust\CollectionExport;
 
-use BrianFaust\Payload\Json;
 use BrianFaust\Payload\Xml;
+use BrianFaust\Payload\Json;
 use BrianFaust\Payload\Yaml;
-use BrianFaust\Payload\YamlInline;
 use Illuminate\Http\Response;
+use BrianFaust\Payload\YamlInline;
 
 /**
  * Class Export.
