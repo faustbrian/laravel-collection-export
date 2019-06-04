@@ -1,16 +1,23 @@
 {
     "name": "artisanry/collection-export",
     "description": "Export Collections into several file formats",
-    "keywords": ["laravel", "framework", "Laravel-CollectionExport", "Laravel Collection Export"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "Laravel-CollectionExport",
+        "Laravel Collection Export"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@basecode.sh",
-        "homepage": "https://basecode.sh"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "^5.6",
+        "php": "^7.2",
+        "illuminate/support": "^5.8",
         "faustbrian/payload": "^1.0",
         "dompdf/dompdf": "~0.8",
         "h4cc/wkhtmltoimage-amd64": "0.12.x",
