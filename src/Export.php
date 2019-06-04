@@ -6,18 +6,18 @@ declare(strict_types=1);
 /*
  * This file is part of Collection Export.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\CollectionExport;
+namespace Artisanry\CollectionExport;
 
-use BrianFaust\Payload\Json;
-use BrianFaust\Payload\Xml;
-use BrianFaust\Payload\Yaml;
-use BrianFaust\Payload\YamlInline;
+use Artisanry\Payload\Json;
+use Artisanry\Payload\Xml;
+use Artisanry\Payload\Yaml;
+use Artisanry\Payload\YamlInline;
 use Illuminate\Http\Response;
 
 /**

@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/collection-export",
+    "name": "artisanry/collection-export",
     "description": "Export Collections into several file formats",
-    "keywords": ["laravel", "framework", "Laravel-CollectionExport", "Laravel Collection Export", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-CollectionExport", "Laravel Collection Export"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\CollectionExport\\": "src"
+            "Artisanry\\CollectionExport\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\CollectionExport\\": "tests"
+            "Artisanry\\Tests\\CollectionExport\\": "tests"
         }
     },
     "config": {
@@ -42,7 +42,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\CollectionExport\\CollectionExportServiceProvider"
+                "Artisanry\\CollectionExport\\CollectionExportServiceProvider"
             ]
         }
     },
