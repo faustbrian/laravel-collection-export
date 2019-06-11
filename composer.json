@@ -22,7 +22,7 @@
         "dompdf/dompdf": "~0.8",
         "h4cc/wkhtmltoimage-amd64": "0.12.x",
         "h4cc/wkhtmltopdf-amd64": "0.12.x",
-        "maatwebsite/excel": "~2.0"
+        "maatwebsite/excel": "~3.1"
     },
     "require-dev": {
         "graham-campbell/testbench": "^5.0",
